@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saloni Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 id="naam"><samp>S</samp>aloni.</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas ri-close-line" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas ri-menu-line" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                 <p>Front-End Developer</p>
+                <h1>Hi, I'm <samp>Saloni</samp> <br> Patil I am a web <br> Developer</h1>
+            </div>
+        </div>
+    </div>
+    <!---------------about----------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/photo_saloni.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a front-end web developer with expertise in SQL/MySQL, Java, and C. Using these skills, I create dynamic and innovative projects. My strong foundation in front-end development is demonstrated through various completed projects, all showcased in my portfolio, highlighting my expertise and creativity.
+                    </p>
+                     <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                     </div>
+                     <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span><h3>Web Development</h3></span><h4>Web app development</h4></li>
+                            <li><span><h3>Java/C++ languages</h3></span><h4>Building Projects</h4></li>
+                            <li><span><h3>SQL/MySql</h3></span><h4>Development and Management</h4></li>
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span><h3>7/2023 - 8/2023</h3></span><h4>Java Intern</h4></li>
+                            <p>During my internship at Ramraj Technology Company, I actively contributed to the development and enhancement of
+                                Java-based applications. Collaborating with a skilled team, I gained hands-on experience in Java programming,
+                                utilizing frameworks such as Spring and Hibernate.</p>
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span><h3>2017 - 2018</h3></span><h4>Complited Metriculation from Government Girls High Secondary School Prabhat Pattan.</h4></li>
+                            <li><span><h3>2019 - 2020</h3></span><h4>Complited Intermediate from Government Girls High Secondary School Prabhat Pattan.</h4></li>
+                            <li><span><h3>2020 - 2024</h3></span><h4>Bachelor of Technology from Technocrats institute of Technology, Bhopal.</h4></li>
+                        </ul>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------services------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="ri-code-s-slash-line"></i>
+                    <h2>Web Design</h2>
+                    <p>"Specializing in civil construction projects with a focus on quality and efficiency. Experience includes residential, commercial, and public infrastructure. Committed to delivering durable and reliable solutions that meet client needs and exceed expectations."
+                    </p>
+                </div>
+                <div>
+                    <i class="ri-code-s-slash-line"></i>
+                    <h2>Web Design</h2>
+                    <p>"Offering custom software development services for web and mobile applications. Expertise in creating scalable, efficient, and user-friendly solutions tailored to specific business requirements. Proven ability to transform complex ideas into functional, innovative software products."
+                    </p>
+                </div>
+                <div>
+                    <i class="ri-code-s-slash-line"></i>
+                    <h2>Web Design</h2>
+                    <p>"Designing and developing engaging social media platforms with advanced features such as user profiles, content sharing, and real-time interactions. Focused on creating scalable solutions that enhance user experience and drive community engagement."
+</p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- ------------portfolio---------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                   <!-- <img src="images/work-1.png" alt=""> -->
+                   <video id="imgg" src="./video/Document - Google Chrome 2024-04-24 01-02-04.mp4" autoplay muted loop></video>
+                   <div class="layer">
+                    <h3>Civil Construction Website</h3>
+                    <p>Quality civil construction for residential, commercial, and public projects.</p>
+                     <a href="https://patilsaloni.github.io/Civil_Construction/
+                     "><i class="ri-external-link-line"></i></a>
+                </div>
+                </div>
+                <div class="work">
+                    <video id="imgg" src="software.mp4" autoplay muted loop></video>
+
+                    <!-- <img src="images/work-2.png" alt=""> -->
+                    <div class="layer">
+                        <h3>Software developer website</h3>
+                        <p>Custom software solutions for web and mobile applications, efficiently designed.</p>
+                         <a href="https://patilsaloni.github.io/TaskMay1/
+                         "><i class="ri-external-link-line"></i></a>
+                    </div>
+                 </div>
+                 <div class="work">
+                    <video id="imgg" src="Document - Google Chrome 2024-07-18 23-02-17.mp4" autoplay muted loop></video>
+
+                    <!-- <img src="images/work-3.png" alt=""> -->
+                    <div class="layer">
+                        <h3>Social Media website</h3>
+                        <p>Dynamic social media platforms with user profiles and real-time features.</p>
+                         <a href="https://patilsaloni.github.io/Project_Talwine/
+                         "><i class="ri-external-link-line"></i></a>
+                    </div>
+                 </div>
+            </div>
+            <a href="https://github.com/Patilsaloni4" class="btn">See More</a>
+        </div>
+    </div>
+    <!-- ----------------contact-------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="ri-send-plane-fill"></i>patilsaloni237@gmail.com</p>
+                    <p><i class="ri-phone-fill"></i>8305527475</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/patilsaloni-/"><i class="ri-linkedin-box-fill"></i></a>
+                        <a href="https://www.instagram.com/p_a_t_il__/"><i class="ri-instagram-line"></i></a>
+                        <a href="https://github.com/Patilsaloni4"><i class="ri-github-fill"></i></a>
+                    </div>
+                    <a href="images/SALONI_RESUME.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+   <script src="script.js"></script>
+</body>
+
+</html>
